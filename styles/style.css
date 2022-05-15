@@ -1,0 +1,120 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito';
+  display: inline;
+  background-color: var(--green1);
+}
+:root {
+  --blue: #25399F;
+  --brown1: #584239;
+  --brown2: #6C523B;
+  --green1: #2B734E;
+  --green2: #27AB5E;
+  --green3: #1CDC5F;
+  --green4: #76E44E;
+  --red: #F14037;
+  --yellow: #FFDD00;
+  --pink: #F0909C;
+
+}
+canvas {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:0;
+}
+#defaultCanvas0{
+  z-index: 0;
+}
+h1 {
+  font-size: 50px;
+  margin: 10px auto 10px auto;
+  width: fit-content;
+  font-family: 'Rubik Microbe';
+  color: var(--yellow);
+  z-index:5;
+  pointer-events: none;
+}
+input{
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-weight: 600;
+  color: var(--green1);
+  font-size: 13px;
+  background: var(--yellow);
+  padding: 10px 15px;
+  border: solid var(--green1) 2px;
+  text-decoration: none;
+  }
+button {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: 'Nunito';
+  font-weight: 700;
+  color: var(--green1);
+  font-size: 13px;
+  background: var(--yellow);
+  padding: 10px 15px;
+  border: solid var(--green1) 2px;
+  text-decoration: none;
+}
+button:hover {
+  opacity: 80%;
+}
+.gameBtn{
+  position: absolute;
+  z-index: 2;
+}
+#roomBtn{
+  top: 30vh;
+  left: 35vw;
+  background-color: var(--yellow);
+  color: var(--brown1);
+  border: solid var(--brown1) 2px;
+}
+#room{
+  top: 30vh;
+  left: 45vw;
+  background-color: var(--yellow);
+  color: var(--brown1);
+  border: solid var(--brown1) 2px;
+}
+#startBtn{
+  top: 40vh;
+  left: 35vw;
+  background-color: var(--red);
+  color: var(--brown1);
+  border: solid var(--brown1) 2px;
+}
+#insBtn{
+  top: 50vh;
+  left: 35vw;
+}
+#nextBtn{
+  bottom:20vh;
+  right: 20vw;
+  visibility: hidden;
+}
+#prevBtn{
+  bottom:20vh;
+  left: 20vw;
+  visibility: hidden;
+}
+#textureOverlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 100vh;
+  z-index:5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity:20%;
+}
